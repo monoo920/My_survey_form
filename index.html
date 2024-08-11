@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey_from</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <h2>JeeforJee survey form</h2>
+        </header>
+        <form action="" id="form">
+            <div class="form-control">
+                <label for="name" id="label-name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-control">
+                <label for="email" id="label-email">Email</label>
+                <input type="email" id="mail" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-control">
+                <label for="age" id="label-age">Age</label>
+                <input type="number" id="age" placeholder="Enter your age">
+            </div>
+            <div class="form-control">
+                <label for="role" id="label-role">which option best describes you ?</label>
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="professional">Professional</option>
+                    <option value="intern">Intern</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="">
+                    would you recommend jeeforjee to a friend?
+                </label>
+                <label for="recommend-1">
+                    <input type="radio" id="recommend-1" name="recommend">Yes
+                </label>
+                <label for="recommend-2">
+                    <input type="radio" id="recommend-2" name="recommend">No
+                </label>
+                <label for="recommend-3">
+                    <input type="radio" id="recommend-3" name="recommend">Maybe
+                </label>
+            </div>
+            <div class="form-control">
+                <label >Languages and Frameworks known
+                    <small>(check all that apply)</small>
+                </label>
+                <label for="in-1">
+                    <input type="checkbox" name="in">C
+                </label>
+                <label for="in-2">
+                    <input type="checkbox" name="in">C++
+                </label>
+                <label for="in-3">
+                    <input type="checkbox" name="in">Java
+                </label>
+                <label for="in-4">
+                    <input type="checkbox" name="in">JavaScript
+                </label>
+                <label for="in-5">
+                    <input type="checkbox" name="in">Python
+                </label>
+            </div>
+            <!-- multiline text input field -->
+            <div class="form-control">
+                <label for="comment">
+                    Any comments or suggestions
+                </label>
+                <textarea name="comment" id="comment" placeholder="Enter comments here"></textarea>
+            </div>
+            <!-- submit button -->
+             <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    
     
 </body>
 </html>
